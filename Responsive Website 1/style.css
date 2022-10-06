@@ -1,0 +1,1279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #24292F;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 100%;
+    overflow-x: hidden;
+    height: min-content;
+}
+
+#navBar{
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    list-style-type: none;
+    height: 4em;
+}
+
+.list{
+    padding: 1.5em;
+    color: darkgray;
+}
+
+#heading{
+    height: 40em;
+    padding: 16em;
+    text-align: center;  
+}
+
+.mainheading{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    color: white;
+    font-size: 22px;
+}
+
+#content {
+    background-color: white;
+    height: 40em;
+}
+
+#splitContent{
+    height: 40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+    margin: 0 auto;
+
+}
+
+#leftContent{
+    /* background-color: red; */
+    padding-right: 10em;
+}
+
+#leftContent>h3{
+    padding: 4em 0em 1em 0em;
+}
+
+#leftContent>.contentPara{
+    text-align: justify;
+}
+
+#rightContent>img{
+    border-image:none;
+    position: relative;
+    left : 8em;
+    bottom: -6em;
+}
+
+#links{
+    height: 10em;
+    background-color: white;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.button1{
+    background-color: lightgray;
+    padding: 0.75em 3em;
+    margin: 0em 0.5em;
+    font-size: 18px;
+    color: rgb(97, 83, 83);
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.button2{
+    background-color:#F12F2F;
+    padding: 0.75em 2em;
+    margin: 0em 0.5em;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.button3{
+    background-color:orange;
+    padding: 0.75em 2em;
+    margin: 0em 0.5em;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+#sentense{
+    height: 7em;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+
+#bottompg{
+    background-color: white;
+    height: 50em;
+}
+
+#awards{
+    height: 5em;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgawards{
+    scale: 130%;
+    padding-right: 0.75em;
+}
+
+#Award{
+    width: 65%;
+    margin: 0 auto;
+}
+
+#parentAwardname{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 7em;
+}
+
+.awardname{ 
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    color: rgb(91, 87, 87);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1.2em;
+    margin: 0.5em;
+}
+
+.year{
+    color: lightgray;
+    font-weight: 400;
+    padding-top: 0.3em;
+}
+
+.univername {
+    color: rgb(85, 82, 82);
+    font-size: 13.5px;
+    padding-top: 0.75em;
+    font-weight: 300;
+}
+
+#poetrypoem{
+    height: 25em;
+    margin-top: 7em;
+    /* background-color: #F12F2F; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.poetry{
+    text-align: center;
+    padding: 1em 3em;
+}
+
+.poetlist{
+    font-size: 13.5px;
+    color: rgb(85, 82, 82);
+    text-align: left;
+    padding: 5em 0em;
+}
+
+#disclaimer{
+    background-color: #24292F;
+    height: 15em;
+}
+
+#disclaimerWidth{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    padding-top: 5em;
+}
+
+.disclaimerhead{
+    color: rgb(213, 209, 209);
+}
+
+.disclaimerpara{
+    padding-top: 1em;
+    color: rgb(213, 209, 209);
+    text-align: justify;
+}
+
+.disclaimerpara>span{
+    color: rgb(100, 99, 99);
+}
+
+#t3>p>span{
+    color: rgb(49, 49, 200);
+}
+/* _____________________________________________________________________ */
+
+@media screen and (max-width:320px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    height: 6em;
+}
+
+.list{
+    margin-top: 0.5em;
+    padding: 0.1em;
+}
+
+#heading{
+    height: 3em;
+    padding: 3em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 30px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 14px;
+}
+
+#content {
+    height: 57em;
+}
+
+#splitContent{
+    height: 57em;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 1em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 18px;
+}
+
+#leftContent>.contentPara{
+    font-size: 14px;
+}
+
+#rightContent>img{
+    scale: 70%;
+    position: absolute;
+    left : -1em;
+    top: 12.75em;
+}
+
+#links{
+    height: 12em;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.button1{
+    padding: 0.75em 3em;
+    margin: 0.5em 5em;
+    font-size: 14px;
+}
+
+.button2{
+    padding: 0.75em 3em;
+    margin: 0.5em 5em;
+    font-size: 14px;
+}
+
+.button3{
+    padding: 0.75em 3em;
+    margin: 0.5em 5em;
+    font-size: 14px;
+}
+
+#sentense{
+    height: 7em;
+    font-size: 16px;
+    padding: 2.5em 1em;
+}
+
+#bottompg{
+    height: 100em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 72em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: flex;
+    flex-direction: column;
+    height: 31em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 39em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 0.25em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 0.5em 0em;
+}
+
+#disclaimer{
+    height: 17em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+
+.disclaimerpara{
+    padding-top: 1em;
+}
+
+.disclaimerpara>span{
+    color: rgb(100, 99, 99);
+}
+
+#t3>p>span{
+    color: rgb(49, 49, 200);
+}
+}
+/* _____________________________________________________________________ */
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    height: 6em;
+}
+
+.list{
+    margin-top: 0.5em;
+    padding: 0.1em;
+}
+
+#heading{
+    height: 3em;
+    padding: 3em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 30px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 14px;
+}
+
+#content {
+    height: 56em;
+}
+
+#splitContent{
+    height: 57em;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 1em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 18px;
+}
+
+#leftContent>.contentPara{
+    font-size: 14px;
+}
+
+#rightContent>img{
+    scale: 80%;
+    position: absolute;
+    left : 0.75em;
+    top: 15em;
+}
+
+#links{
+    height: 12em;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.button1{
+    padding: 0.75em 3em;
+    margin: 0.5em 7em;
+    font-size: 14px;
+}
+
+.button2{
+    padding: 0.75em 3em;
+    margin: 0.5em 7em;
+    font-size: 14px;
+}
+
+.button3{
+    padding: 0.75em 3em;
+    margin: 0.5em 7em;
+    font-size: 14px;
+}
+
+#sentense{
+    height: 7em;
+    font-size: 16px;
+    padding: 2.5em 1em;
+}
+
+#bottompg{
+    height: 94em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 65em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: flex;
+    flex-direction: column;
+    height: 29em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 39em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 0.25em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 0.5em 0em;
+}
+
+#disclaimer{
+    height: 17em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+}
+/* _____________________________________________________________________ */
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    height: 6em;
+}
+
+.list{
+    margin-top: 0.5em;
+    padding: 0.1em;
+}
+
+#heading{
+    height: 3em;
+    padding: 3em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 30px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 14px;
+}
+
+#content {
+    height: 55.5em;
+}
+
+#splitContent{
+    height: 57em;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 1em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 18px;
+}
+
+#leftContent>.contentPara{
+    font-size: 14px;
+}
+
+#rightContent>img{
+    scale: 90%;
+    position: absolute;
+    left : 2em;
+    top: 16.5em;
+}
+
+#links{
+    height: 12em;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.button1{
+    padding: 0.75em 3em;
+    margin: 0.5em 8em;
+    font-size: 14px;
+}
+
+.button2{
+    padding: 0.75em 3em;
+    margin: 0.5em 8em;
+    font-size: 14px;
+}
+
+.button3{
+    padding: 0.75em 3em;
+    margin: 0.5em 8em;
+    font-size: 14px;
+}
+
+#sentense{
+    height: 7em;
+    font-size: 16px;
+    padding: 2.5em 1em;
+}
+
+#bottompg{
+    height: 94em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 65em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: flex;
+    flex-direction: column;
+    height: 29em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 39em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 0.25em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 0.5em 0em;
+}
+
+#disclaimer{
+    height: 17em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+}
+/* _____________________________________________________________________ */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+}
+
+.list{
+    padding: 1.5em;
+}
+
+#heading{
+    height: 15em;
+    padding: 4em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 38px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 16px;
+}
+
+#content {
+    height: 32em;
+}
+
+#splitContent{
+    height: 35em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 1em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 18px;
+}
+
+#leftContent>.contentPara{
+    font-size: 14px;
+}
+
+#rightContent>img{
+    scale: 90%;
+    position: absolute;
+    left : 25em;
+    top: 22em;
+}
+
+#links{
+    height: 6em;
+    background-color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.button1{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+.button2{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+.button3{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+#sentense{
+    height: 7em;
+    font-size: 16px;
+    padding: 3em 1em;
+}
+
+#bottompg{
+    height: 55em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 43em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr;
+    grid-template-rows: 1fr 1fr;
+    height: 14em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 30em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 0.25em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 0.5em 0em;
+}
+
+#disclaimer{
+    height: 15em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+}
+/* _____________________________________________________________________ */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+}
+
+.list{
+    padding: 1.5em;
+}
+
+#heading{
+    height: 20em;
+    padding: 6em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 40px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 18px;
+}
+
+#content {
+    height: 30em;
+}
+
+#splitContent{
+    height: 35em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 1em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 18px;
+}
+
+#leftContent>.contentPara{
+    font-size: 14px;
+}
+
+#rightContent>img{
+    scale: 90%;
+    position: absolute;
+    left : 35em;
+    top: 25em;
+}
+
+#links{
+    height: 6em;
+    background-color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.button1{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+.button2{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+.button3{
+    padding: 0.75em 3em;
+    margin: 0.5em 1em;
+    font-size: 14px;
+}
+
+#sentense{
+    height: 7em;
+    font-size: 16px;
+    padding: 3em 1em;
+}
+
+#bottompg{
+    height: 48em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+    position: relative;
+    top: -0.17em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 40em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 9em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 30em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 0.25em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 0.5em 0em;
+}
+
+#disclaimer{
+    height: 17em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+
+.disclaimerpara{
+    padding-top: 1em;
+}
+
+.disclaimerpara>span{
+    color: rgb(100, 99, 99);
+}
+
+#t3>p>span{
+    color: rgb(49, 49, 200);
+}
+}
+/* _____________________________________________________________________ */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+body {
+    font-size: 16px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+}
+
+.list{
+    padding: 1.5em;
+}
+
+#heading{
+    height: 30em;
+    padding: 10em 1em 7em 1em;
+}
+
+.mainheading{
+    font-size: 46px;
+    padding-bottom: 0.5em;
+}
+
+.slogan {
+    font-size: 18px;
+}
+
+#content {
+    height: 32em;
+}
+
+#splitContent{
+    
+    height: 32em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#leftContent{
+    padding: 1em 5em 2em 1em;
+}
+
+#leftContent>h3{
+    padding: 1em 1em 1em 0em;
+    font-size: 20px;
+}
+
+#leftContent>.contentPara{
+    font-size: 16px;
+}
+
+#rightContent>img{
+    scale: 90%;
+    position: absolute;
+    left : 49em;
+    top: 36em;
+}
+
+#links{
+    height: 10em;
+    background-color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+
+#bottompg{
+    height: 34.5em;
+}
+
+#awards{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgawards{
+    scale: 100%;
+    padding-right: 0.75em;
+    position: relative;
+    top: -0.17em;
+}
+
+#Award{
+    width: 75%;
+    margin: 0 auto;
+    height: 28em;
+    font-size: 18px;
+}
+
+#parentAwardname{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 9em;
+}
+
+.awardname{ 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.year{
+    padding-top: 0.3em;
+}
+
+.univername {
+    font-size: 14px;
+    padding-top: 0.75em;
+}
+
+#poetrypoem{
+    height: 17em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.poetry{
+    text-align: center;
+    padding: 0.75em 4em;
+}
+
+.poetlist{
+    font-size: 14px;
+    padding: 2em 0em;
+}
+
+#disclaimer{
+    height: 12em;
+}
+
+#disclaimerWidth{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    padding-top: 3em;
+}
+.disclaimerpara{
+    padding: 1em 2em 0em 0em;
+    text-align: justify;
+}
+}
+/* _____________________________________________________________________ */
